@@ -21,6 +21,8 @@
   "homepage": "https://github.com/declancarrollcb/playwright-datadog-trace-issue#readme",
   "devDependencies": {
     "@types/node": "^18.15.7",
+    "cross-env": "^7.0.3",
+    "dd-trace": "https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/fix-playwright-require-issue",
     "playwright": "^1.32.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
