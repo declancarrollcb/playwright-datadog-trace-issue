@@ -1,0 +1,31 @@
+{
+  "name": "playwright-datadog-trace-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tests": "tsc",
+    "test": "npm run build:tests && npx playwright test -c tests-out",
+    "test:dd": "cross-env NODE_OPTIONS=\"-r dd-trace/ci/init\" npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/declancarrollcb/playwright-datadog-trace-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/declancarrollcb/playwright-datadog-trace-issue/issues"
+  },
+  "homepage": "https://github.com/declancarrollcb/playwright-datadog-trace-issue#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.7",
+    "playwright": "^1.32.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.32.0"
+  }
+}
